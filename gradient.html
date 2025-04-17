@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> </title>
+<style>
+body{
+display:flex;
+align-item:center;
+justify-content:center;
+height:100vh;
+margin:0;
+padding:15%;
+box-sizing:border-box;
+background:black;
+}
+.line{
+width:400px;
+height:20px;
+border-radius:10px;
+box-sizing:0px 0px 15px #f357ff 0px 0px 40px #f357ft;
+animation:animate 2s linear infinite;
+background: linear-gradient(to right,#ff2d2d,#77ff77,#00ddff);
+}
+@keyframes animate{
+0%{
+ filter:hue-rotate(0deg);
+}
+100%{
+ filter:hue-rotate(360deg);
+}
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="line"></div>
+</body>
+</html>

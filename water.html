@@ -1,0 +1,80 @@
+<html>
+<head>
+<title></title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'poppins',sans-serif;
+}
+.nobi{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("file://DESKTOP-6NMGFVO/Users/Yamini/Downloads/thai.jap.jpg");
+background-size:cover;
+position:relative;
+background-position:center;
+}
+nav{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:15px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+nav .logo{
+ width:120px;
+}
+nav ul li{
+display:inline-block;
+list-style:none;
+margin:5px 25px;
+}
+nav ul li a{
+
+text-decoration:none;
+color:#fff;
+}
+.title{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:160px;
+color:transparent;
+background-image:linear-gradient(#fff,#fff);
+background-repeat:no-repeat;
+-webkit-background-clip:text;
+background-position:-750px 0;
+animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor{
+100%{
+background-position:0 0;
+}
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class="nobi">
+<nav>
+<img src="C:\Users\Yamini\Downloads\travel_-removebg-preview.png" class="logo">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Places</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact us</a></li>
+</ul>
+</nav>
+<h1 class="title">Thailand </h1>
+
+</div>
+</body>
+</html>

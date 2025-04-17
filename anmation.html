@@ -1,0 +1,149 @@
+<html>
+<head> 
+<title> </title>
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+
+}
+body{
+position:relative ;
+width:100%;
+height:100%;
+background-color:#cccfff;
+ overflow-y:hidden;
+animation:sky 5.5s 2s forwards;
+
+}
+img{
+position:absolute;
+bottom: 0px;
+width:100%;
+height:200px;
+ 
+}
+.sun{
+position:absolute;
+left:70%;
+width:100px;
+height:100px;
+background-color: #fcfc3a;
+border-radius:50%;
+box-shadow: 0 0 20px 10px   #fcfc3a;
+animation: Sun 15s forwards;
+}
+@keyframes Sun{
+ 100%{
+      transform: translateY(750px)
+}
+}
+@keyframes sky{
+ 50%{
+   background-color: #ffd700;
+}
+65%{
+   background-color: #ffb90f;
+}
+85%{
+   background-color: #b39300;
+}
+100%{
+   background-color: #68228b;
+}
+}
+.moon{
+position:absolute;
+top:5%;
+right:10%;
+width:100px;
+height:100px;
+background-color: transparent;
+box-shadow: 20px 10px #fff;
+border-radius:50%;
+ opacity:0;
+animation: moon 0.8s 7s forwards;
+}
+@keyframes moon{
+ 100%{
+     opacity: 1;
+}
+}
+.cloud{
+position:absolute;
+width:100%;
+height:100vh;
+overflow:hidden;
+}
+ #cloud1{
+top:0;
+left:0;
+max-width:400px;
+ z-index:10;
+animation:animatecloud 50s linear infinite;
+}
+#cloud2{
+top:0;
+left:0;
+max-width:300px;
+ z-index:10;
+animation:animatecloud 35s linear infinite;
+}
+#cloud3{
+top:0;
+left:0;
+max-width:300px;
+z-index:10;
+animation:animatecloud 80s linear infinite;
+}
+#cloud4{
+top:200px;
+left:0;
+max-width:200px;
+ z-index:10;
+animation:animatecloud 80s linear infinite;
+animation-delay:-20s;
+}
+#cloud5{
+top:250px;
+left:0;
+max-width:400px;
+ z-index:10;
+animation:animatecloud 40s linear infinite;
+animation-delay:-5s;
+}
+#cloud6{
+top:75px;
+left:0;
+max-width:300px;
+ z-index:10;
+animation:animatecloud 30s linear infinite;
+animation-delay:-10s;
+}
+@keyframes animatecloud{
+0%{
+ transform:translateX(-100%) scale(1);
+}
+100%{
+ transform:translateX(400%) scale(1.2);
+}
+}
+}
+</style>
+</head>
+<body>
+<div class="sun">  </div>
+<img  src="https://freepngimg.com/thumb/building/146768-building-city-photos-download-hd.png"   >
+<div class="moon">  </div>
+<div class="cloud">
+<img src="https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud1" >
+<img src=" https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud2" >
+<img src="https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud3" >
+<img src=" https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud4" >
+<img src="https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud5" >
+<img src="https://static.vecteezy.com/system/resources/previews/010/174/972/original/simple-sunny-day-cloud-image-realistic-cloud-on-a-transparent-background-cloud-on-the-sky-free-png.png" id="cloud6" >
+</div>
+
+</body>
+</html>

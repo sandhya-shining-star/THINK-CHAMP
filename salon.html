@@ -1,0 +1,141 @@
+<html>
+<head>
+<title> sallon web desgin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+<style>
+*{
+ margin:0;
+padding:0;
+font-family:'poppins',sans-sarif;
+ 
+}
+#banda{
+background-image:linear-gradient(rgba(0,0,0,0.5), #6c207d),url("https://images.pexels.com/photos/696287/pexels-photo-696287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size:cover;
+background-position:center;
+height:100vh;
+}
+.logo{
+width:140px;
+position:absolute;
+top:4%;
+left:10%;
+}
+.banda-text{
+text-align:center;
+color:#fff;
+padding-top:120px;
+
+}
+.banda-text h1{
+font-size:130px;
+font-family:'Kaushan Script' , cursive;
+}
+.banda-text p{
+font-size:20px;
+font-style:italic;
+}
+.banda-btn{
+margin:70px auto 0;
+}
+.banda-btn a{
+width:150px;
+text-decoration:none;
+dispay: inline-block;
+margin:0 20px;
+padding:4px 20px;
+color:#fff;
+border:.5px solid #fff;
+position:relative;
+z-index:1;
+transition:color 0.5s;
+}
+.banda-btn a span{
+width:0;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+background:#fff;
+z-index:-1;
+
+}
+.banda-btn a:hover span{
+width:100%;
+}
+.banda-btn a:hover {
+color:#000;
+font-weight:3px;
+}
+#sidenav{
+ width:200px;
+height:100vh;
+right:0;
+top:0;
+position:fixed;
+background: #6c207d;
+z-index:2;
+}
+nav ul li{
+list-style:none;
+margin:50px 20px;
+}
+nav ul li a{
+text-decoration:none;
+color:#fff;
+
+}
+#menubtn{
+width:50px;
+height:50px;
+background:  #6c207d;
+text-align:center;
+position:fixed;
+right:30px;
+top:20px;
+border-radius:3px;
+z-index:3;
+cursor:pointer;
+}
+#menubtn img{
+width:20px;
+margin-top:15px;
+
+}
+
+
+</style>
+</head>
+<body>
+<section id ="banda">
+<img src=" C:\Users\Yamini\Downloads\barb-removebg-preview.png" class="logo">
+<div class="banda-text">
+<h1>   Beauty salon </h1>
+<p> The <span style="text-color:yellow"> hair<span> that you dream </p>
+<div class="banda-btn">
+<a href="#"> <span> </span>View services</a>
+<a href="#"> <span> </span>More details </a>
+</div>
+</section>
+<div id="sidenav">
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">FEATURES</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">STYLE GUIDE</a></li>
+</ul>
+</nav>
+</div>
+<div id="menubtn">
+<img src="C:\Users\Yamini\Downloads\menu.jpg">
+</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+<style>
+ 
+.mountain{
+    position: relative;
+    margin: 320px auto;
+    width: 800px;
+    z-index: 3;
+}
+.li{
+    float: left;
+}
+.peak1{
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid steelblue;
+}
+.peak2{
+    border-left: 150px solid transparent;
+    border-right: 175px solid transparent;
+    border-bottom: 150px solid steelblue;
+    margin-left: -200px;
+    margin-top: 50px;
+}
+.peak3{
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid steelblue;
+    margin-left: -250px;
+}
+.sun{
+    background: gold;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    animation: rais 20s ease-in-out 2s infinite alternate both;
+}
+.cloud-wrapper{
+    margin: -150px auto;
+    width: 800px;
+}
+.cloud-wrapper .ul{
+    position: relative;
+}
+.cloud-wrapper .li{
+    position: absolute;
+    background: gainsboro;
+}
+.cloud-wrapper .li:nth-child(1){
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+}
+.cloud-wrapper .li:nth-child(2){
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 23px;
+    border-radius: 50%;
+}
+.cloud-wrapper .li:nth-child(3){
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-left: 80px;
+    border-radius: 50%;
+}
+.clouds1{
+    animation: slideOver 12s infinite alternate-reverse both;
+}
+.clouds2-container{
+    transform: scale(0.75);
+}
+.clouds2{
+    animation: slideOver 7s 0.5s infinite alternate-reverse both;
+
+}
+.clouds3-container{
+    transform: scale(0.7);
+}
+.clouds3{
+    margin-top: 20px;
+    animation: slideOver 9s 2s infinite alternate both;
+}
+.clouds4{
+    margin-top: 20px;
+    animation: slideOver 13s linear 3s infinite alternate both;
+
+}
+@keyframes slideOver{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(800px);
+        opacity: 0;
+    }
+}
+@keyframes rais{
+    0%{
+        background: tomato;
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        background-color: goldenrod;
+    }
+    55%{
+        background-color: gold;
+    }
+    100%{
+        transform: translateY(-350px);
+    }
+}
+
+ 
+</style>
+
+
+
+</head>
+<body>
+<div class="ul mountain">
+        <div class="li peak1"></div>
+        <div class="li peak2"></div>
+        <div class="li peak3"></div>
+    </div>
+    <div class="sun"></div>
+    <div class="cloud-wrapper">
+        <div class="ul clouds1">
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+        </div>
+        <div class="clouds2-container">
+            <div class="ul clouds2">
+                <div class="li"></div>
+                <div class="li"></div>
+                <div class="li"></div>
+            </div>
+        </div>
+        <div class="clouds3-container">
+            <div class="ul clouds3">
+                <div class="li"></div>
+                <div class="li"></div>
+                <div class="li"></div>
+            </div>
+        </div>
+        <div class="clouds4-container">
+          <div class="ul clouds4">
+                <div class="li"></div>
+                <div class="li"></div>
+                <div class="li"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
